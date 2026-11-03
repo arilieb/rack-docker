@@ -5,7 +5,7 @@ FROM python:3.12.8-bookworm
 ENV DEBIAN_FRONTEND=noninteractive
 ENV VIRTUAL_ENV=/opt/venv
 ENV PATH="$VIRTUAL_ENV/bin:$PATH"
-ENV RACK_VERSION=1.0.0
+ENV RACK_VERSION=1.2.0
 
 # Install required dependencies
 RUN apt-get update && apt-get install -y \

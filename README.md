@@ -23,7 +23,7 @@
 
 ##### Python 3.12-8 Debian Bookworm
 
-* [1.0, 1.0.0, latest](https://github.com/healthKERI/rack-docker/blob/master/Dockerfile)
+* [1.2, 1.2.0, latest](https://github.com/healthKERI/rack-docker/blob/master/Dockerfile)
 
 ------------
 
@@ -92,13 +92,13 @@ docker run --name myrack -d -p 15632:15632 healthkeri/rack
 To run a specific version of RACK, specify a tag at the end:
 
 ```bash
-docker run --name myrack -d -p 15632:15632 healthkeri/rack:1.0.0
+docker run --name myrack -d -p 15632:15632 healthkeri/rack:1.2.0
 ```
 
 To run using a specific architecture, specify it using the `--platform` argument:
 
 ```bash
-docker run --name myrack -d -p 15632:15632 --platform linux/arm64 healthkeri/rack:1.0.0
+docker run --name myrack -d -p 15632:15632 --platform linux/arm64 healthkeri/rack:1.2.0
 ```
 
 Look at the [Environment Variables](#environment-variables) section for more available configuration options.
