@@ -16,7 +16,7 @@ services:
         ipv4_address: 172.31.0.2
 
   mirth-cli-1:
-    image: healthkeri/mirth-with-cli:1.0.0
+    image: healthkeri/mirth-with-cli:1.2.0
     volumes:
       - ./channels/mirth1:/opt/connect/channels
     depends_on:
@@ -42,7 +42,7 @@ services:
         ipv4_address: 172.31.0.3
 
   mirth-cli-2:
-    image: healthkeri/mirth-with-cli:1.0.0
+    image: healthkeri/mirth-with-cli:1.2.0
     volumes:
       - ./channels/mirth2:/opt/connect/channels
     depends_on:
