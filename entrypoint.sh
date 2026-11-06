@@ -22,7 +22,7 @@ fi
 # Check for one-time installation per running container
 if [ ! -f /opt/rack/initialized ]; then
   . "${VIRTUAL_ENV}/bin/activate" && \
-      rack install --name "${RACK_NAME}" ${ARGS} --admin-port "${PORT}" --admin-host "0.0.0.0"
+      rack install --name "${RACK_NAME}" ${ARGS} --admin-port "${PORT}" --admin-host "0.0.0.0" --ui
   touch /opt/rack/initialized # Create a file to mark initialization
 fi
 

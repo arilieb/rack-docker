@@ -27,7 +27,7 @@ wait_for_mirth
 for channel_file in /opt/connect/channels/*.xml; do
   echo "Importing channel: $channel_file"
 cat << EOF > /opt/connect/channels/script.txt
-import "${channel_file}"
+import "${channel_file}" force
 deploy
 channel enable *
 channel start *

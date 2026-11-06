@@ -13,7 +13,7 @@ services:
       - rack-network
 
   rack:
-    image: healthkeri/rack:1.0.0
+    image: healthkeri/rack:1.3.0
     ports:
       - "8632:8632" # Maps host port 8632 to container port 8632
     networks: # Connect to the same network

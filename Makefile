@@ -1,7 +1,7 @@
 
 .PHONY: build-rack-mirth-sample build-rack
 
-VERSION=1.0.0
+VERSION=1.3.0
 
 define DOCKER_WARNING
 In order to use the multi-platform build enable the containerd image store
